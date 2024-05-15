@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Forestry Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="/assets/logo.png" alt="Logo" class="logo-left">
+            <h1>Provincial Environment 
+                <span class="and">and</span> 
+                <span class="sec_row">Natural Resources Office</span>
+            </h1>
+            <img src="/assets/logo.png" alt="Logo" class="logo-right">
+            <div class="rectangle">
+                <h2>Online Forestry Services</h2>
+            </div>
+        </header>
+        
+        <div id="page1" class="page">
+            <div class="center-box">
+                <h3>Chainsaw registration</h3>
+                <p>Application for Chainsaw registration</p>
+                <button id="applyBtn">APPLY</button>
+            </div>
+        </div>
+
+        <div id="page2" class="page" style="display:none;">
+            <div class="form-container">
+                <h3>Apply for Chainsaw Registration</h3>
+                <form id="registrationForm">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Full Name">
+                    
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" placeholder="Barangay, Bayan, Probinsya">
+                    
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g. 09123456789">
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="message_container">
+            <div class="message-box">
+                <p>Your application for Chainsaw registration have been submitted. Thank you!</p>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
