@@ -21,7 +21,7 @@ header {
 }
 header h1 {
     display: inline-block;
-    bottom: 2em;
+    bottom: 1.5em;
     position: relative;
     align-items: flex-start;
     font-family: Jacques Francois;
@@ -34,14 +34,14 @@ header h1 {
 }
 .logo-left {
     position: relative;
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     right: 20px;
     bottom: 10px;
 }
 .logo-right {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     position: relative;
     left: 30px;
     bottom: 10px;
