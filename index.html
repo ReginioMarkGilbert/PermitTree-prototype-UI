@@ -7,52 +7,91 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img src="/assets/logo.png" alt="Logo" class="logo-left">
-            <h1>Provincial Environment 
-                <span class="and">and</span> 
-                <span class="sec_row">Natural Resources Office</span>
-            </h1>
-            <img src="/assets/logo.png" alt="Logo" class="logo-right">
-            <div class="rectangle">
-                <h2>Online Forestry Services</h2>
+    <section class="home">
+        <div class="container">
+            <header>
+                <img src="/assets/logo.png" alt="Logo" class="logo-left">
+                <h1>Provincial Environment 
+                    <span class="and">and</span> 
+                    <span class="sec_row">Natural Resources Office</span>
+                </h1>
+                <img src="/assets/logo.png" alt="Logo" class="logo-right">
+                <div class="rectangle">
+                    <h2>Online Forestry Services</h2>
+                </div>
+            </header>
+
+            <div id="page1" class="page">
+                <div class="center-box">
+                    <h3>Chainsaw registration</h3>
+                    <p>Application for Chainsaw registration</p>
+                    <button id="applyBtn" class="apply-button">APPLY</button>
+                </div>
             </div>
-        </header>
-        
-        <div id="page1" class="page">
-            <div class="center-box">
-                <h3>Chainsaw registration</h3>
-                <p>Application for Chainsaw registration</p>
-                <button id="applyBtn">APPLY</button>
+
+            <div id="page2" class="page" style="display:none;">
+                <div class="form-container">
+                    <h3>Apply for Chainsaw Registration</h3>
+                    <form id="registrationForm">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Full Name" required>
+
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" placeholder="Barangay, Bayan, Probinsya" required>
+
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="e.g. 09123456789" required>
+
+                        <label for="fileUpload">Upload image/s of requirements</label>
+                        <div class="file-upload-container">
+                            <input type="file" id="fileUpload" name="fileUpload" accept="image/*,.pdf" multiple>
+                            <label for="fileUpload" class="file-upload-label">
+                                <img src="/assets/paperclip.svg" alt="Upload Icon">
+                                Choose Files
+                            </label>
+                        </div>
+                        <div id="fileNames" class="file-names"></div>
+
+                        <button class="submit-button" type="submit">Submit</button>
+                    </form>
+                </div>
             </div>
+
+            <div class="message_container" id="message-container" style="display: none;">
+                <div class="message-box">
+                    <p>Your application for Chainsaw registration has been submitted. Thank you!</p>
+                </div>
+                <button id="viewStatusBtn" class="view-status-button">View application status</button>
+            </div>
+
+            <div id="statusPage" class="status-page" style="display: none;">
+                <h2>Your Applications:</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Application Type</th>
+                            <th>Application ID</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Chainsaw Application</td>
+                            <td>2024-CHR00001</td>
+                            <td><span class="status in-progress">In Progress</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="message_container" id="message-container" style="display: none;">
+                <div class="message-box">
+                    <p>Your application for Chainsaw registration has been submitted. Thank you!</p>
+                </div>
+            </div>
+
         </div>
-
-        <div id="page2" class="page" style="display:none;">
-            <div class="form-container">
-                <h3>Apply for Chainsaw Registration</h3>
-                <form id="registrationForm">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Full Name" required>
-
-                    <label for="address">Address</label>
-                    <input type="text" id="address" name="address" placeholder="Barangay, Bayan, Probinsya" required>
-
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="e.g. 09123456789" required>
-
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
-        </div>
-
-        <div class="message_container">
-            <div class="message-box">
-                <p>Your application for Chainsaw registration have been submitted. Thank you!</p>
-            </div>
-        </div>
-
-    </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
